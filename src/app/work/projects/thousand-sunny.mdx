@@ -1,0 +1,107 @@
+---
+title: "Thousand Sunny – AI-Driven Level-2 Product Ops for PORTNET®"
+publishedAt: "2025-08-03"
+summary: "Developed a multi-agent AI system for PSA PORTNET® that automates incident detection, root-cause analysis, and escalation workflows with real-time monitoring dashboards."
+images:
+  - "/images/projects/psa/cover-01.png"
+---
+## How to Use
+
+**🌐 Live Streamlit Deployment:**  
+[Open the Streamlit App](https://psacompetition-66778899.streamlit.app/)
+
+**📊 Dashboard Access:**  
+[View the Looker Studio Dashboard](https://lookerstudio.google.com/reporting/92fd24f6-779b-43ee-a9db-f374bbe811eb)
+
+**🧠 Further Project Information:**  
+[Read the Full Project Overview](https://docs.google.com/document/d/1Ty4rtf_OYBAmhH19suqhWjWWHJQt8DEwI7XL1fn9v20/edit?usp=sharing)
+
+**▶️ Video Explanation:**  
+[Watch the YouTube Demo](https://youtu.be/sbfqLxqrUcg)
+
+---
+## Overview
+
+**Thousand Sunny** is an AI-driven automation pipeline built for **PSA CodeSprint 2025**, tackling the challenge of redefining Level-2 Product Operations for **PORTNET®**, Singapore’s nationwide B2B port community system.  
+Handling over **350M+ annual transactions**, PORTNET® connects shipping lines, hauliers, freight forwarders, and government agencies—where even minor incidents can trigger large-scale operational ripple effects.
+
+This project introduces an **AI multi-agent system** that empowers duty officers with faster, smarter, and more reliable incident management. By combining knowledge retrieval, log parsing, and historical analytics, it reduces mean time to resolution (MTTR), enhances resilience, and maintains business continuity across PSA’s critical digital infrastructure.
+
+---
+
+## Key Objectives
+
+- ⚡ Accelerate incident resolution through AI-driven root-cause analysis and automated response workflows.  
+- 🤝 Enhance reliability via multi-agent reasoning across knowledge, historical, and system log data.  
+- 🧾 Automate ticketing and escalation to minimize manual workload and ensure consistent reporting.  
+- 📊 Enable real-time monitoring through an interactive dashboard for operational visibility.  
+- ☁️ Ensure scalability and data integrity through a modular, cloud-native architecture.
+
+---
+
+## System Architecture
+
+The system is built around four specialized AI agents, each performing distinct yet complementary functions:
+
+- **Knowledge Agent** – Retrieves Standard Operating Procedures (SOPs), escalation contacts, and contextual preconditions from the knowledge base.  
+- **Historical Agent** – Searches past incidents, learns from similar cases, and adapts previous resolutions to current problems.  
+- **System Logs Agent** – Parses and analyzes system logs to detect error patterns and validate root causes.  
+- **Executor Agent** – Synthesizes all agent outputs, generates escalation summaries, and automatically triggers ticket creation.
+
+Together, these agents form a collaborative network that ensures reliability, traceability, and rapid response.
+
+---
+
+## Data & Infrastructure
+
+The system’s foundation rests on robust, scalable data pipelines and infrastructure:
+
+- **Storage:** AWS-hosted databases for incident history, system logs, and SOP knowledge bases.  
+- **Pipelines:** Automated ingestion and transformation of CSV log data for continuous analysis.  
+- **Scalability:** Designed to handle concurrent alerts and high-volume data traffic efficiently.  
+- **Embedding Models:** Semantic search models (FAISS and OpenAI embeddings) enable accurate retrieval across heterogeneous datasets.  
+
+---
+
+## Impact & Benefits
+
+The Thousand Sunny framework delivered measurable improvements in PSA’s operational resilience and efficiency:
+
+- **Faster Resolution:** Reduced mean time to resolve (MTTR) for critical incidents through automation.  
+- **Operational Resilience:** Strengthened 24/7 fault recovery and business continuity for maritime operations.  
+- **Data-Driven Decisions:** Multi-agent collaboration prioritized incidents based on real-world historical data.  
+- **Scalable Architecture:** Flexible, modular design supports cross-port and multi-system deployment.  
+- **Seamless Integration:** Plug-and-play compatibility with PSA’s existing ticketing and workflow tools.  
+
+---
+
+## Challenges and Learnings
+
+Coordinating multiple AI agents required a strong focus on synchronization, consistency, and auditability.  
+We learned that balancing autonomy with oversight was crucial—each agent had to operate independently but also provide transparent, verifiable outputs.  
+Optimizing embeddings, caching, and queue systems under real-world data loads further enhanced system stability.  
+
+This project deepened our expertise in **AI reliability engineering**, **data pipeline orchestration**, and **multi-agent collaboration frameworks** for mission-critical systems.
+
+---
+
+## Outcome
+
+The prototype achieved a **40% reduction** in manual escalation time, demonstrating that Level-2 Product Operations could be partially automated without sacrificing human oversight.  
+Supervisors gained instant visibility into incident trends, audit logs, and performance metrics through a unified dashboard—setting a strong foundation for future operational AI deployments within PSA.
+
+---
+
+## Technologies Used
+
+- **Python** – Core development language for data processing and AI integration  
+- **Streamlit** – Interactive frontend for real-time monitoring and control  
+- **AWS** – Scalable cloud hosting and database infrastructure  
+- **Looker Studio** – Dashboard and visualization layer for analytics  
+- **OpenAI & VertexAI** – LLM-based semantic retrieval and contextual summarization  
+- **Pandas & FAISS** – Data transformation, indexing, and vector-based search
+
+---
+
+✅ *Built for PSA CodeSprint 2025 (Problem Statement 3 – Redefining Level 2 Product Ops)*  
+🧭 *Team “Thousand Sunny” – Automation for smarter, safer, and faster maritime operations.*

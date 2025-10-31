@@ -1,0 +1,136 @@
+---
+title: "MatchUp – Sports Networking Web Platform"
+publishedAt: "2025-04-30"
+summary: "Developed a Vue.js and Firebase-powered sports networking app that connects users to organize, join, and chat about local sports games seamlessly."
+images:
+  - "/images/projects/matchup/cover-01.png"
+---
+
+**🌐 Live Website:**  
+[https://bt3103-matchup.web.app](https://bt3103-matchup.web.app)
+
+**📂 GitHub Repository:**  
+[https://github.com/BT3103AppDev1/l1-finaltermproject-2425s2l1_group_07](https://github.com/BT3103AppDev1/l1-finaltermproject-2425s2l1_group_07)
+
+**Youtube Link**
+[https://youtu.be/19eouBixT9o](https://youtu.be/19eouBixT9o)
+
+---
+## Overview
+
+**MatchUp** is a web-based sports networking platform designed to simplify how users find, organize, and join sports games.  
+Built as part of the **BT3103 Application Systems Development for Business Analytics** module, the platform connects players by **sport type, location, and experience level** — helping them discover games that suit their skill level and availability.
+
+The application bridges a common gap in the sports community: casual players often struggle to find teammates or suitable matches. MatchUp creates an engaging ecosystem that combines **match discovery, chat communication, and personalized profiles** to foster active, healthy, and social lifestyles.
+
+---
+
+## Key Objectives
+
+- ⚡ **Simplify Game Discovery** – Enable users to find and join games based on location, sport, and skill level.  
+- 💬 **Enhance Communication** – Integrate real-time chatrooms for every match, ensuring seamless coordination.  
+- 🧭 **Encourage Community Building** – Foster social interaction and long-term engagement among players.  
+- 📱 **Streamline Organization** – Allow users to easily create, manage, and track their own listings.  
+- 🧩 **Ensure Scalability** – Design a modular system capable of supporting diverse sports and user growth.
+
+---
+
+## Core Features
+
+### 🏠 Landing & Registration
+- Users are welcomed by an intuitive landing page that explains the platform and prompts them to **sign up or log in**.  
+- During registration, users set a profile picture, username, bio, and sports preferences to personalize their experience.
+
+### 🔍 Explore Page
+- Users can browse **active sports listings** filtered by sport type, location, and experience level.  
+- Expired listings automatically fade out for clarity.  
+- Each listing includes game details (e.g., players needed, equipment, cost) and quick actions to **join chats or add to favourites**.
+
+### 💬 Chatrooms
+- Every game has a **dedicated chatroom**, allowing joined participants to coordinate details and confirm attendance in real time.  
+- A dropdown system lets users switch easily between multiple ongoing chats.
+
+### 👤 User Profiles
+- Profiles display the user’s details, preferred sports, and their own created or joined listings.  
+- An **Edit Profile** function lets users update their information dynamically without leaving the page.
+
+### ⭐ Favourites
+Users can bookmark listings to revisit later.  
+A clean layout keeps saved matches organized and allows quick removal or re-joining actions.
+
+---
+
+## Data & Architecture
+
+- **Frontend Framework:** Vue.js (Single File Components for modular UI)  
+- **Backend:** Firebase (Authentication, Firestore Database, Hosting)  
+- **Hosting:** Firebase Hosting with GitHub Actions CI/CD for automated deployment  
+- **Data Handling:** Firestore serves as the single source of truth with reactive updates across components  
+- **Version Control:** GitHub repository with centralized main branch strategy for clarity and team alignment  
+
+Firestore architecture includes three main collections:
+- **Users** – stores user profiles, preferences, and joined games  
+- **Listings** – holds match details, owner data, and player requirements  
+- **Messages** – stores chat messages tied to listing IDs and sender metadata  
+
+---
+
+## Product Management
+
+- The team adopted an **agile sprint-based workflow**, emphasizing incremental feature delivery and live demos during stand-ups.  
+- Version control was maintained through GitHub, with every feature documented via clear commits.  
+- All deployment was automated through GitHub Actions — each push to the main branch triggered a **Firebase build and deploy pipeline**, ensuring production consistency.
+
+---
+
+## Testing & Validation
+
+### 🧪 Unit Testing
+- Conducted with **Vitest** and **Vue Test Utils** using **JSDOM** for UI validation.  
+- Firebase functions were **mocked** (e.g., `getAuth`, `signInWithEmailAndPassword`) to enable isolated frontend testing.  
+- Tests focused on UI rendering, input validation, chat message flow, and state synchronization.
+
+### 👥 User Testing
+- User testing was performed with participants aged 18–25.  
+- Testers completed key user flows such as registration, joining games, and chatting.  
+- Observations confirmed **strong usability**, intuitive affordance, and effective signifiers (buttons, labels, constraints).  
+- Feedback guided interface refinements and confirmation pop-ups for better flow.
+
+---
+
+## Challenges & Learnings
+
+- Coordinating multiple Vue components while maintaining **reactive data flow** across Firestore collections required careful event management.  
+- Achieving **real-time synchronization** for chat messages and listings without over-fetching improved the app’s responsiveness.  
+- The project strengthened team skills in **modular frontend design, CI/CD pipelines**, and **collaborative agile development**.
+
+---
+
+## Impact & Outcome
+
+MatchUp successfully delivered an engaging, production-ready web app that:
+- Simplifies sports matchmaking through data-driven filtering.  
+- Enables instant chat-based coordination for players.  
+- Promotes active and social lifestyles by lowering entry barriers to casual sports.
+
+Deployed live via Firebase Hosting, the app remains a scalable foundation for future enhancements like:
+- Skill-based matchmaking algorithms.  
+- Attendance tracking and push notifications.  
+- Integration with wearable or fitness APIs.
+
+---
+
+## Technologies Used
+
+- **Vue.js 3** – Frontend framework (Single File Components, Vue Router)
+- **Firebase** – Authentication, Firestore Database, and Hosting
+- **Vitest & Vue Test Utils** – Unit testing and CI validation
+- **JSDOM** – Simulated environment for frontend testing
+- **GitHub Actions** – Automated deployment pipeline
+- **HTML / CSS / JavaScript (ES6)** – UI styling and interactivity
+
+
+---
+
+✅ *Built for BT3103 (Application Systems Development for Business Analytics)*  
+👟 *Team MatchUp – Connecting players through sport, data, and design.*
